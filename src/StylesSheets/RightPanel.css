@@ -1,0 +1,54 @@
+:local(#RightCol) {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    margin-left: 365px;
+    margin-top: 610px;
+}
+
+:local(.serverAccordion) {
+  border: none;
+  float: left;
+  color: white;
+  border-radius: 5px;
+  height: 60px;
+  width: 327px;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: all .2s ease;
+  cursor: pointer;
+  font-size: 21px;
+  font-weight: bold;
+  margin: 4px;
+}
+
+:local(.active), :local(.serverAccordion:hover) {
+  background-color: #424242!important;
+}
+
+:local(.serverPlayers) {
+  display: inline-block;
+  float: right;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+:local(.Gamemodepanel) {
+  padding: 0 18px;
+  background-color: #555555;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+:local(.Gamemodepanel button) {
+  color: white;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  margin: 2px;
+  font-weight: bold;
+  font-size: 21px;
+}

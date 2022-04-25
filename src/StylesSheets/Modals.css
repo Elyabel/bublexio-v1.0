@@ -1,0 +1,46 @@
+:local(.Modal) {
+    transform: scale(1);
+    transition: .5s;
+	z-index: 2;
+}
+
+@media (max-height:750px),
+(max-width:1000px) {
+	:local(.Modal) {
+		transform: scale(.9)
+	}
+}
+
+@media (max-height:900px) {
+	:local(.Modal) {
+		transform: scale(.85)
+	}
+}
+
+@media (max-height:720px),
+(max-width:850px) {
+	:local(.Modal) {
+		transform: scale(.8)
+	}
+}
+
+@media (max-height:600px),
+(max-width:750px) {
+	:local(.Modal) {
+		transform: scale(.7)
+	}
+}
+
+@media (max-height:500px),
+(max-width:600px) {
+	:local(.Modal) {
+		transform: scale(.6)
+	}
+}
+
+@media (max-height:440px),
+(max-width:500px) {
+	:local(.Modal) {
+		transform: scale(.5)
+	}
+}

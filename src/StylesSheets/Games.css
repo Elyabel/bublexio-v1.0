@@ -1,0 +1,31 @@
+:local(#Game) {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    text-align: center;;
+}
+
+:local(#GamePanels) {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    transform: scale(1);
+    transition: .5s;
+}
+
+
+:local(.bublexLogo){
+    position: absolute;
+    margin-top: -630px;
+    margin-left: 30px;
+}
+
+:local(.bublexLogo img) {
+    width: 300px;
+}

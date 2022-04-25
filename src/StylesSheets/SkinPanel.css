@@ -1,0 +1,11 @@
+:local(.SkinPanelContent) {
+    float: left;
+    margin-top: -257px!important;
+    text-align: center;
+    justify-content: center;
+}
+
+:local(.SkinSelector) {
+    text-align: center;
+    justify-content: center;
+}

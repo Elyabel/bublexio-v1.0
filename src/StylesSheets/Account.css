@@ -1,0 +1,106 @@
+:local(.AccountView) {
+    color: white;
+}
+
+:local(.Col1) {
+    padding: 5px;
+}
+
+:local(.ProfilePicture) {
+    
+}
+
+:local(#LogoutButton) {
+    position: absolute;
+    margin-left: 280px;
+    margin-top: 3px;
+    transition: all .2s ease;
+    cursor: pointer
+}
+
+:local(#LogoutButton:hover) {
+    color: #f97316;
+}
+
+:local(.ProfilePicture img) {
+    width: 4rem;
+    height: 4rem;
+    max-width: 100%;
+    border-radius: 9999px;
+}
+
+:local(.UserInfo) {
+    margin-top: 0px;
+    margin-left: 10px;
+    position: absolute;
+}
+
+:local(.ProfilePicture), :local(.UserInfo) {
+    display: inline-block;
+}
+
+:local(.UserInfo p) {
+    margin: 0px;
+    display: flex;
+}
+
+:local(.username) {
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #ffffff;
+}
+
+:local(.coins) {
+    font-weight: 500;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    color: #ffffff;
+}
+
+:local(.Col2) {
+
+}
+
+:local(.LevelNumber p) {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    justify-content: space-between;
+}
+
+:local(.Lvl2) {
+    margin-left: 270px;
+    margin-top: -34px;
+    position: absolute;
+}
+
+:local(.XpBar) {
+    width: 94%;
+    height: 20px;
+    background-color: rgb(66, 66, 66);
+    position: absolute;
+    margin-left: 5px;
+    border-radius: 9999px;
+    margin-top: -15px;
+}
+
+:local(.ProgressBar) {
+    position: absolute;
+    /*width: 10%;*/
+    height: 20px;
+    background-color: #f97316;
+    border-radius: 9999px;
+}
+
+:local(.XpCount) {
+    color: #ffffff;
+    z-index: 1;
+    font-weight: 700;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 130px;
+}

@@ -1,0 +1,36 @@
+:local(#LeftCol) {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    margin-left: -1055px;
+    margin-top: 610px;
+    flex-direction: column;
+}
+
+:local(.LeftContent) {
+    color: black;
+    text-align: center;
+    height: 30px!important;
+}
+
+:local(.Loginbtn) {
+    width: 335px;
+    height: 30px;
+    background-color: #ff8800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Ubuntu';
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s background ease-in-out;
+}
+
+:local(.Loginbtn:hover) {
+    background-color: #f97316;
+}
+
+:local(.NotLogged){}
+:local(.IsLogged){}
+:local(#leftpanell){}

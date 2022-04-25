@@ -1,0 +1,457 @@
+.gameOverlay {
+  opacity: 1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 200;
+    overflow: hidden;
+    transition: background 4s ease-in-out;
+}
+
+.closeKeyboardButton {
+  background-color: transparent!important;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+  position: absolute;
+  margin-left: 395px;
+  margin-top: -25px;
+  color: #f97316
+}
+
+.swal2-image {
+  border-radius: 9999px;
+}
+
+#hud {
+  
+}
+
+#leaderboard {
+    color: #fff;
+    border-radius: 0px;
+    right: 15px;
+    top: 15px;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+  }
+  #leaderboard > .lb_title {
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    overflow: hidden;
+    margin-top: 1px;
+    font-family: Ubuntu;
+  }
+  #lb_detail > div {
+    float: left;
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+  }
+  #lb_detail .self {
+    color: #FFAAAA
+  }
+  
+  #leaderboard {
+    font-weight: bold;
+  }
+  #leaderboard div div{
+    font-size:16px;
+    font-weight:bold;
+    width:100%;
+  }
+  #lb_detail {
+    font-weight: bold;
+    padding-bottom: 5px!important;
+    text-align: left;
+    padding-left: 5px;
+    font-family: Ubuntu;
+  }
+  #leaderboard {
+    background-color: rgba(34, 34, 34, 0.45);   
+    border-radius: 5px;  
+    position: absolute
+  }
+
+  .chat {
+    border-radius: 5px;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+  }
+
+  .chat-content {
+    border-radius: 0px;
+    background-color: rgba(34, 34, 34, 0.45);
+    height: 355px;
+    margin-top: -50px;
+  }
+
+  .chat-input, #chat-messages {
+    width: 100%!important;
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    font-size: 16px;
+  }
+
+  #chat-messages {
+    padding: 8px;
+    list-style: none;
+    box-sizing: border-box;
+    overflow: hidden;
+    word-wrap: break-word;
+    font-weight: bold;
+    bottom: 45px;
+    line-height: 23px;
+    height: 305px; 
+    font-family: Ubuntu;
+    overflow-y: visible!important;
+  }
+
+  #chat-messages::-webkit-scrollbar-track
+{
+	border-radius: 10px;
+	background-color: rgba(35, 35, 35, 0.61);
+}
+
+#chat-messages::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: rgba(35, 35, 35, 0.61);
+}
+
+#chat-messages::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #555;
+}
+
+  .chat-item {
+    color: hsla(0,0%,100%,.64);
+    font-size: small;
+    font-family: Ubuntu;
+  }
+
+  .chat-input {
+    background-color: rgba(116, 116, 116, 0.25);
+    padding: 10px;
+    outline: none;
+    border: none;
+    bottom: 0px;
+    border-radius: 0px;
+    color: #fff;
+  }
+
+  .stats {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    min-width: 100px;
+    width: auto;
+    overflow: hidden;
+    border-radius: 0px;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+  }
+  
+  .stats-column {
+    background-color: rgba(34, 34, 34, 0.45);
+    border-radius: 5px;  
+    padding: 8px;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: left;
+    line-height: 1.2;
+    text-align: center;
+  }
+  
+  .stats-row {
+    color: hsla(0,0%,100%,.8);
+    font-size: medium;
+    white-space: nowrap;
+    display: inline-block;
+    text-overflow: ellipsis;
+    font-family: 'Ubuntu';
+    font-size: 20px;
+  }
+
+  .keybox {
+    width: 200px;
+    height: 40px;
+    display: inline-block;
+    background-color: #e2e2e2;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #c1c1c1;
+    cursor: pointer;
+    user-select: none;
+    color: #000000;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: -2px;
+}
+
+#keyboardShow {
+  background: #dddedf;
+  width: 800px;
+}
+
+button {
+  background-color: #353535!important;
+  transition: .3s ease!important;
+}
+
+#freeskinspanelstab {
+  margin-top: -110px!important;
+  position: absolute!important;
+}
+
+.SwalPopupDark {
+  background-color: #282828!important;
+  color: white!important;
+  font-family: Rajdhani!important;
+}
+
+.SwalPopupDark, .swal2-title, .swal2-html-container {
+  color: white;
+}
+
+.SwalPopupDark button {
+  background-color: #4b4a4a!important;
+  color: white!important;
+  border: none;
+  border-radius: 5px;
+  width: 120px;
+  height: 40px;
+  margin: 2px;
+  margin-top: 3px;
+  cursor: pointer;
+  transition: all .1s ease-in-out;
+  font-size: 25px;
+  border: none!important;
+}
+
+.SwalPopupDark button:hover {
+    background-color: #414040!important;
+    border: none!important;
+}
+
+.SwalPopupDark button::after {
+  border: none!important;
+}
+
+.AnimationDelay {
+  margin-top: 30px;
+  margin-left: 0px;
+  width: 490px;
+}
+
+#animationnumber {
+margin-top: 10px;
+margin-left: 180px;
+position: absolute;
+font-size: 20px;
+}
+
+.HudSizeRange {
+  margin-top: 30px;
+  margin-left: 0px;
+  width: 490px;
+}
+
+#hudnumber {
+margin-top: 10px;
+margin-left: 200px;
+position: absolute;
+font-size: 20px;
+}
+
+.stoplock {
+  position: absolute;
+  z-index: 200;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+#OptionCard {
+  background-color: rgb(56, 56, 56);
+  width: 160px;
+  height: 36px;
+  padding-top: 10px;
+  border-radius: 5px;
+  margin: 5px;
+  display: inline-block;
+  padding-left: 10px;
+  font-weight: bold;
+}   
+
+#OptionCard input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+#OptionCard label {
+  position: relative;
+  cursor: pointer;
+  display: inline-flex;
+  float: left;
+}
+
+#OptionCard label::before {
+  content:'';
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 2px solid darkorange;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+#OptionCard label input {
+
+}
+
+#OptionCard input:checked + label::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 9px;
+  width: 6px;
+  height: 14px;
+  border: solid darkorange;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+#selectedskin {
+  width: 100px;
+  height: 100px;
+  background-color: #000000;
+  border-radius: 85px;
+  background-size: 100%;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+#selectedskin:hover {
+  opacity: 0.5;
+}
+
+#skinselect {
+    height: 100px;
+    width: 100px;
+    opacity: 0;
+    border-radius: 65px;
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+    line-height: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+#skinselect:hover {
+  opacity: 1;
+}
+
+#profileiconnnn {
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  opacity: 0;
+  border-radius: 9999px;
+  text-align: center;
+  justify-content: center;
+  font-size: 25px;
+  line-height: 60px;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: all .2s ease;
+  margin-top: -67px;
+}
+
+#profileiconnnn:hover {
+opacity: 1;
+}
+
+#Time {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 330px;
+  height: 17px;
+  bottom: 375px;
+  left: 10px;
+  text-align: center;
+  padding: 10px;
+  overflow: hidden;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  border-radius: 5px;
+}
+
+#datetime {
+  margin-top: -0px;
+  margin-bottom: -0px;
+  margin-left: -0px;
+  margin-right: -0px;
+}
+
+:local(.closeModal) {
+    -webkit-animation: hidePopup .4s;
+    animation: hidePopup .4s;
+    transform: scale(0);
+}
+
+@keyframes hidePopup {
+    0% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+    100% {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+  } 
+}

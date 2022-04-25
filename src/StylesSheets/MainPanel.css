@@ -1,0 +1,111 @@
+:local(#MainCol) {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    margin-left: -345px;
+    margin-top: 610px;
+}
+
+:local(.MainContent) {
+    color: white!important;
+}
+
+:local(.MainContent input) {
+    display: block;
+    border-radius: 5px;
+    width: 328px;
+    height: 30px;
+    border: 1px solid #222!important;
+    transition: all .1s ease;
+    font-family: 'Ubuntu';
+    font-size: 15px;
+    margin-top: 5px;
+    background-color: 535353;
+    background-color: rgb(66, 66, 66);
+    color: white;
+}
+
+:local(.MainContent input::placeholder) {
+    color: white;
+}
+
+:local(.MainContent input:focus) {
+    outline: 1px solid #535353;
+    border: none;
+}
+
+:local(.AdsPart) {
+    color: white;
+
+}
+
+:local(.Content) {
+    padding-bottom: 5px;
+}
+
+:local(.Content a) {
+    color: white;
+  border: none;
+  -moz-outline-style: none;
+  outline: none;
+  margin: 5px;
+}
+
+:local(.Advertisement) {
+    width: 325px;
+    height: 250px;
+    background-color: rgb(66, 66, 66);
+    margin-top: -10px;
+}
+
+:local(.mainbuttons) {
+    margin-top: 5px;
+}
+
+:local(.Settings) {
+    background-color: #3f93f3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+:local(.Settings:hover) {
+    background-color: #2563eb!important;
+}
+
+:local(.Spectate) {
+    background-color: #2de69c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+:local(.Spectate:hover) {
+    background-color: #059669!important;
+}
+
+:local(.Settings), :local(.Spectate) {
+    margin: 3px;
+    height: 30px;
+    width: 160px;
+    color: white;
+    font-size: 20px;
+    transition: background .2s ease-in-out;
+}
+
+:local(.Play) {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    transition: background .2s ease-in-out;
+    background-color: #f97316;
+    margin-top: 5px;
+    height: 30px;
+    width: 325px;
+}
+
+:local(.Play:hover) {
+    background-color: #c75d11!important;
+}

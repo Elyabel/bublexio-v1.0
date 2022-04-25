@@ -1,0 +1,317 @@
+:local(#Modal) {
+    background-color: #222;
+    position: absolute;
+    vertical-align: top;
+    width: 700px;
+    height: 450px;
+    min-height: 10px;
+    border-radius: 5px;
+    display: inline-flex;
+  /* padding: 5px;*/
+    margin-top: -520px;
+    margin-left: -350px;
+    justify-content: center;
+    z-index: 2;
+    color: white;
+    animation: showPopup .5s;
+}
+
+@keyframes showPopup {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+:local(.closeButton) {
+    background-color: transparent!important;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    position: absolute;
+    margin-left: 665px;
+    margin-top: 2px;
+    color: #f97316;
+    transition: all .2s ease-in-out;
+}
+
+:local(.closeButton:hover) {
+  color: white;
+}
+
+:local(.allcontentsettings) {
+  margin-left: -558px;
+    margin-top: 21px;
+}
+
+:local(.Nav) {
+  margin-top: -21px;
+}
+
+:local(.NavigationBar) {
+  display: flex;
+  flex-direction: column;
+  width: 110px;
+  height: 450px;
+  margin: 0;
+  padding: 0;
+  color: white;
+  list-style: none;
+  background-color: rgb(56, 56, 56);
+  border-radius: 5px 0px 0px 5px;
+}
+
+:local(.NavigationBar li) {
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  transition: all .2s ease;
+}
+
+:local(.NavigationBar li:hover) {
+  background-color: rgba(40, 40, 40);
+  border-left: solid orange;
+  border-width: 5px;
+}
+
+
+:local(.Content) {
+  display: grid;
+  margin-left: 110px;
+  margin-top: -400px;
+  padding: 15px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+:local(.General) {
+
+}
+
+:local(.Keybinds) {
+  padding-bottom: 10px;
+}
+
+:local(.Theme) {
+
+}
+
+:local(.Mouse) {
+
+}
+
+:local(#SettingsList) {
+  width: 556px;
+  height: 400px;
+  position: absolute;
+  border: 2px solid rgb(56, 56, 56);
+  border-radius: 10px 20px 10px 10px;
+  padding-top: 5px;
+  overflow-y: auto;
+  margin-top: 330px;
+  display: table-cell;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+}
+
+:local(#SettingsList::-webkit-scrollbar-track)
+{
+-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+border-radius: 0px;
+/*background-color: #383838;*/
+}
+
+:local(#SettingsList::-webkit-scrollbar)
+{
+width: 12px;
+background-color: #383838;
+}
+
+:local(#SettingsList::-webkit-scrollbar-thumb)
+{
+border-radius: 0px;
+background-color: darkorange;
+}
+
+:local(#OptionCard) {
+  background-color: rgb(56, 56, 56);
+  width: 160px;
+  height: 36px;
+  padding-top: 10px;
+  border-radius: 5px;
+  margin: 5px;
+  display: inline-block;
+  padding-left: 10px;
+  font-weight: bold;
+}   
+
+:local(#OptionCard input) {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+:local(#OptionCard label) {
+  position: relative;
+  cursor: pointer;
+  display: inline-flex;
+  float: left;
+}
+
+:local(#OptionCard label::before) {
+  content:'';
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 2px solid darkorange;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+:local(#OptionCard label input) {
+
+}
+
+:local(#OptionCard input:checked + label::after) {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 9px;
+  width: 6px;
+  height: 14px;
+  border: solid darkorange;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+:local(#ThemeCard) {
+  background-color: rgb(56, 56, 56);
+  width: 160px;
+  height: 36px;
+  padding-top: 10px;
+  border-radius: 5px;
+  margin: 5px;
+  display: inline-block;
+  padding-left: 20px;
+  font-weight: bold;
+  display: inline-grid;
+  position: relative;
+}   
+
+:local(#ThemeCard input) {
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  float: left;
+  cursor: pointer;
+  margin-top: -2.5px;
+  position: fixed;
+  margin-left: 0px;
+  align-items: flex-start;
+  display: block;
+  border: none;
+  border-radius: 5px;
+}
+
+:local(#ThemeCard label) {
+ /* position: relative;*/
+  cursor: pointer;
+  display: inline-flex;
+ /* float: right;*/
+  margin-left: 50px;
+}
+
+:local(.virusbutton) {
+  background-color: #444444;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-left: -20px;
+  margin-top: -10px;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  transition: all .1s ease-in-out;
+  font-weight: bold;
+}
+
+:local(#OptionCardAnimationDelay) {
+  background-color: rgb(56, 56, 56);
+  width: 510px;
+  height: 60px;
+  padding-top: 10px;
+  border-radius: 5px;
+  margin: 5px;
+  display: inline-block;
+  padding-left: 20px;
+  font-weight: bold;
+  display: inline-grid;
+  position: relative;
+}
+
+:local(.Anim) {
+  width: 510px;
+}
+
+:local(.controls) {
+  margin-top: 50px;
+  margin-left: 155px;
+}
+
+:local(.MacroBox) {
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid rgb(141, 141, 141);
+  background-color: rgb(61, 61, 61);
+  min-height: 10px;
+  width: 77px;
+  height: 30px;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 42px;
+  margin-top: 0px;
+  transition: all .2s ease;
+}
+
+:local(.MacroBox:hover) {
+  border: 1px solid rgb(180, 180, 180);
+  background-color: rgb(73, 73, 73);
+}
+
+:local(#KeyName) {
+  width: 100px;
+  text-align: left;
+  font-weight: bold;
+  margin-top: 2px;
+  font-size: 14px;
+}
+
+:local(#KeyName), :local(.MacroBox) {
+  
+}
+
+:local(.KeyCard) {
+  background-color: rgb(56, 56, 56);
+  width: 232px;
+  height: 45px;
+  padding-top: 10px;
+  border-radius: 5px;
+  margin: 5px;
+  padding-left: 20px;
+  font-weight: bold;
+  display: -webkit-inline-box;
+  position: relative;
+}

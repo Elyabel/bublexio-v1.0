@@ -1,0 +1,262 @@
+:local(#Modal) {
+    background-color: #222;
+    position: absolute;
+    vertical-align: top;
+    width: 1060px;
+    height: 450px;
+    min-height: 10px;
+    border-radius: 5px;
+    display: inline-flex;
+  /* padding: 5px;*/
+    margin-top: -520px;
+    margin-left: -527px;
+    justify-content: center;
+    z-index: 2;
+    color: white;
+    animation: showPopup .5s!important;
+}
+@keyframes showPopup {
+  0% {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+  }
+  100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+  }
+}
+
+:local(.closeButton) {
+    background-color: transparent!important;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    position: absolute;
+    margin-left: 1025px;
+    margin-top: 2px;
+    color: #f97316;
+    z-index: 2;
+    transition: all .2s ease-in-out;
+}
+
+:local(.closeButton:hover) {
+  color: white;
+}
+
+:local(.infoButton) {
+  background-color: transparent!important;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+  position: absolute;
+  color: grey;
+  z-index: 2;
+  transition: all .2s ease-in-out;
+}
+
+:local(.infoButton:hover) {
+color: white;
+}
+
+:local(.SkinImage) {
+  width: 60px;
+  height: 60px;
+  border-radius: 999px;
+  position: relative;
+  margin-left: -90px;
+  margin-top: 90px;
+}
+
+:local(.GeneralInformation) {
+  width: 1020px;
+  height: 150px;
+  margin-left: -40px;
+  padding-top: 10px;
+}
+
+:local(#battlePassImage) {
+  width: 100px;
+  float: left;
+}
+
+:local(.BattlePassDescription) {
+  display: inline-block;
+  text-align: start;
+  float: left;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+:local(.BattlePassDescription p) {
+  margin: 10px;
+}
+
+:local(.SeparateLine) {
+  border-left: 6px solid white;
+  height: 100px;
+  margin-left: 350px;
+}
+
+:local(.SeparateLine2) {
+  border-left: 6px solid white;
+  height: 100px;
+  margin-left: 620px;
+  margin-top: -100px;
+}
+
+:local(.BattlePassUserInformation) {
+  text-align: start;
+  width: 280px;
+  display: inline-block;
+  margin-top: -100px;
+  margin-left: -280px;
+  position: absolute;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+:local(#tierImage) {
+  width: 100px;
+}
+
+:local(.BattlePassUserInformation p) {
+  margin-left: 110px;
+  margin-top: -85px;
+}
+
+:local(.BattlePassInformation) {
+  width: 360px;
+  height: 110px;
+  margin-left: 640px;
+  margin-top: -109px;
+  text-align: start;
+  font-weight: bold;
+  font-size: 17px;
+  overflow-y: auto;
+}
+
+:local(.BattlePassInformation::-webkit-scrollbar-track)
+{
+	border-radius: 10px;
+  box-shadow: inset 0 0 5px #3b3b3b; 
+	background-color: #404040;
+}
+
+:local(.BattlePassInformation::-webkit-scrollbar)
+{
+	width: 5px;
+	background-color: #404040;
+  border-radius: 10px;
+}
+
+:local(.BattlePassInformation::-webkit-scrollbar-thumb)
+{
+	border-radius: 10px;
+	background-color: #f97316;
+}
+
+:local(.BattlePassTiers) {
+  width: 1030px;
+  height: 310px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  margin-left: 0px;
+}
+
+:local(.BattlePassList) {
+  height: 100%;
+  width: 100%;
+  border-radius: 7px;
+  background: #353535;
+  overflow-x: auto;
+  display: -webkit-inline-box;
+}
+
+:local(.BattlePassList::-webkit-scrollbar-track)
+{
+	border-radius: 10px;
+  box-shadow: inset 0 0 5px #3b3b3b; 
+	background-color: #404040;
+}
+
+:local(.BattlePassList::-webkit-scrollbar)
+{
+	width: 1px;
+	background-color: #404040;
+  border-radius: 10px;
+}
+
+:local(.BattlePassList::-webkit-scrollbar-thumb)
+{
+	border-radius: 10px;
+	background-color: #f97316;
+}
+
+:local(#Tier) {
+  width: 150px;
+  height: 280px;
+  background-color: #484848;
+  margin: 6px;
+  border-radius: 10px;
+  transition: all .10s ease;
+}
+
+:local(#Tier:hover) {
+  -webkit-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+
+:local(.passCardDescription) {
+  width: 150px;
+  height: 201px;
+  background-color: #1b1b1b;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 0px 0px 10px 10px;
+  position: relative;
+}
+
+:local(.passCardNumber) {
+  width: 150px;
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+:local(.tierCardName) {
+  color: white;
+  width: 150px;
+  height: 20px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+:local(.ClaimTierButton) {
+  height: 35px;
+  width: 125px;
+  margin-top: 155px;
+  margin-left: -137px;
+  border: none;
+  border-radius: 5px;
+  background-color: #6b7280;
+  color: white;
+  font-family: 'Ubuntu';
+  font-size: 17px;
+  font-weight: bold;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+:local(.ClaimTierButton:hover) {
+  background-color: #666666!important;
+  border-radius: 15px;
+}
+
+:local(#TierSkinImage) {
+
+}

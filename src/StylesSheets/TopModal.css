@@ -1,0 +1,135 @@
+:local(#Modal) {
+    background-color: #222;
+    position: absolute;
+    vertical-align: top;
+    width: 335px;
+    height: 300px;
+    min-height: 10px;
+    border-radius: 5px;
+    display: inline-flex;
+    padding: 5px;
+    margin-top: -520px;
+    margin-left: -172px;
+    justify-content: center;
+    color: white!important;
+    animation: showPopup .5s;
+}
+
+@keyframes showPopup {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+:local(.closeButton) {
+    background-color: transparent!important;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    position: absolute;
+    margin-left: 305px;
+    margin-top: -0px;
+    color: #f97316;
+    transition: all .2s ease-in-out;
+}
+
+:local(.closeButton:hover) {
+    color: white;
+}
+
+:local(.Content) {
+    width: 310px;
+    min-height: 120px;
+    height: auto;
+}
+
+:local(.Leaderboard) {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 230px;
+}
+
+:local(.Leaderboard::-webkit-scrollbar-track)
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+:local(.Leaderboard::-webkit-scrollbar)
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+:local(.Leaderboard::-webkit-scrollbar-thumb)
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #f97316;
+}
+
+:local(.LevelCard) {
+    background-color: #f59e0b;
+    border-radius: 5px!important;
+    width: 310px;
+    height: 55px;
+    margin: 5px 0px 5px 0px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    padding-left: 5px;
+    color: white;
+}
+
+:local(.CardContent) {
+    display: flex;
+    padding: 0.5rem;
+    overflow: hidden;
+}
+
+:local(.CardCol) {
+    flex-direction: column;
+    display: flex;
+}
+
+:local(.ColPos) {
+    font-weight: 500;
+    font-size: .75rem;
+    line-height: 1rem;
+    margin-bottom: -0.25rem;
+}
+
+:local(.ColPosNumber) {
+    font-weight: 500;
+}
+
+:local(.CardCol p) {
+    margin: 0;
+}
+
+:local(.CardCol2) {
+    flex-direction: column;
+    display: flex;
+    flex: 1 1 0%;
+}
+
+:local(.CardCol2 p) {
+    margin: 0;
+}
+
+:local(.CardCol3) {
+    flex-direction: column;
+    display: flex;
+    flex: 2 1 0%;
+    margin-right: -25px;
+}
+
+:local(.CardCol3 p) {
+    margin: 0;
+}

@@ -1,0 +1,28 @@
+:local(#Panel) {
+    background-color: #222;
+    border: 2px solid #272727;
+    position: absolute;
+    vertical-align: top;
+    width: 335px;
+    min-height: 15px;
+    height: auto;
+    margin-top: -210px;
+    border-radius: 5px;
+    display: inline-flex;
+    padding: 5px;
+    margin-top: -520px;
+    color: white!important;
+}
+
+@keyframes showpanels {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0.3;
+        -webkit-transform: rotate(359deg);
+    }
+    100% {
+        opacity: 1;
+    }
+}

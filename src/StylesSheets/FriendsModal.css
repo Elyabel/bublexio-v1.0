@@ -1,0 +1,254 @@
+:local(#Modal) {
+    background-color: #222;
+    border: 2px solid white;
+    position: absolute;
+    vertical-align: top;
+    width: 500px;
+    height: 400px;
+    min-height: 10px;
+    border-radius: 5px;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 5px;
+    margin-top: -520px;
+    margin-left: -255px;
+    justify-content: center;
+    color: white!important;
+    animation: showPopup .5s;
+}
+
+@keyframes showPopup {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+:local(.closeButton) {
+    background-color: transparent!important;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    position: absolute;
+    margin-left: 470px;
+    margin-top: -0px;
+    color: #f97316;
+    transition: all .2s ease-in-out;
+    z-index: 2;
+}
+
+:local(.closeButton:hover) {
+    color: white;
+}
+
+:local(.navBar) {
+    width: 494px;
+    position: absolute;
+    height: 40px;
+    padding: 0.5rem;
+    background-color: rgb(68, 68, 68);
+    margin-top: -5px;
+}
+
+:local(.FriendsButtons) {
+    border: none;
+    border-radius: 5px;
+    width: 135px;
+    height: 36px;
+    margin: 3px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+:local(.FriendsButtons:hover) {
+    background-color: #f97316!important;
+}
+
+:local(.FriendsButtonActive) {
+    background-color: #f97316!important;
+}
+
+:local(.Content) {
+    width: 98%;
+    height: 335px;
+    margin-top: 60px;
+    background-color: rgb(68, 68, 68);
+    border-radius: 10px;
+}
+
+:local(.Content h2) {
+    border-bottom: 2px solid;
+    height: 40px;
+}
+
+:local(.FriendContent) {
+    width: 100%;
+    height: 255px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+:local(.FriendContent::-webkit-scrollbar-track)
+{
+	border-radius: 10px;
+  box-shadow: inset 0 0 5px #3b3b3b; 
+	background-color: #404040;
+}
+
+:local(.FriendContent::-webkit-scrollbar)
+{
+	width: 5px;
+	background-color: #404040;
+  border-radius: 0px;
+}
+
+:local(.FriendContent::-webkit-scrollbar-thumb)
+{
+	border-radius: 0px;
+	background-color: #f97316;
+}
+
+:local(#friendCard) {
+    width: 380px;
+    height: 60px;
+    background: #353535;
+    border-radius: 5px;
+    display: inline-flex;
+}
+
+:local(#friendRequestCard) {
+    width: 380px;
+    height: 60px;
+    background: #353535;
+    border-radius: 5px;
+    display: inline-flex;
+}
+
+:local(.Requestsbuttons) {
+    margin-left: 107px;
+}
+
+:local(.AcceptDenyButton) {
+    color: white;
+    border: none;
+    height: 60px;
+    width: 60px;
+    display: inline-table;
+    background: transparent!important;
+    cursor: pointer;
+    font-size: 25px;
+}
+:local(.AcceptDenyButton:hover) {
+    background-color: #6f6f6f!important;
+    border-radius: 15px;
+}
+:local(.AcceptDenyButton:active) {
+    border-radius: 30px;
+}
+
+:local(#check i) {
+    color: lightskyblue;
+}
+
+:local(#deny i) {
+    color: lightcoral;
+}
+
+:local(.friendImage) {
+    margin-left: 5px;
+    display: flex;
+}
+
+:local(.friendImage img) {
+    width: 60px;
+    border-radius: 99px;
+}
+
+:local(.friendInfo) {
+    margin-left: 10px;
+}
+
+:local(.friendInfo p) {
+    margin: 5px;
+}
+
+:local(.friendRequestInfo) {
+    margin-left: 10px;
+}
+
+:local(.friendRequestInfo p) {
+    margin-top: 18px;
+}
+
+:local(.friendBadges) {
+    display: inline-flex;
+    /*margin-left: 140px;*/
+    margin-top: 10px;
+}
+
+:local(.friendBadges img) {
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+    margin: 3px;
+    user-select: none;
+}
+
+:local(.buttons) {
+    width: 78px;
+}
+
+:local(.deleteFriendButton) {
+    background-color: transparent!important;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    margin-left: 20px;
+    color: #f97316;
+    transition: all .2s ease-in-out;
+}
+
+:local(.deleteFriendButton:hover) {
+    color: white;
+}
+
+:local(#addFriendInput) {
+    padding: 0 10px;
+    border-radius: 5px;
+    background: #222;
+    color: #fff;
+    border: none;
+    margin-bottom: 5px;
+    height: 34px;
+    font-family: Ubuntu;
+    font-weight: 500;
+    font-size: 18px;
+    outline: none;
+    box-sizing: border-box;
+    margin-top: 40px;
+}
+
+:local(.sendFriendButton) {
+    height: 40px;
+    border: none;
+    color: white;
+    display: flow-root;
+    width: 150px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 17px;
+    transition: all .2s ease;
+    cursor: pointer;
+    margin-left: 170px;
+}
+
+:local(.sendFriendButton:hover) {
+    background-color: #f97316!important;
+}

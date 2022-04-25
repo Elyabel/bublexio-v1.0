@@ -1,0 +1,55 @@
+:local(.LeftBottomContent) {
+    margin-top: 120px;
+    float: left;
+    margin-top: -470px!important;
+}
+
+:local(.selectionbutton) {
+    width: 80px;
+    height: 80px;
+    margin: 4px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    transition: background .2s ease-in-out;
+}
+
+:local(.selectionbutton i) {
+    font-size: 28px;
+    color: white;
+}
+
+:local(#shop) {
+    background-color: #F97316;
+}
+
+:local(#shop:hover) {
+    background-color: #E08F62!important;
+}
+
+:local(#profile) {
+    background-color: #48c492;
+}
+
+:local(#profile:hover) {
+    background-color: #B4CFB0!important;
+}
+
+:local(#top) {
+    background-color: #ff6cbd;
+}
+
+:local(#top:hover) {
+    background-color: #FF8AAE!important;
+}
+
+:local(#Friends) {
+    background-color: #6781ff;
+}
+
+:local(#Friends:hover) {
+    background-color: #6867AC!important;
+}

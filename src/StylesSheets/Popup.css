@@ -1,0 +1,139 @@
+:local(.popupModal) {
+    background-color: #222;
+    border: 2px solid #272727;
+    position: absolute;
+    vertical-align: top;
+    width: 593px;
+    min-height: 655px;
+    height: auto;
+    border-radius: 5px;
+    display: inline-flex;
+    padding: 5px;
+    margin-top: -630px;
+    color: white!important;
+    margin-left: -300px;
+    animation: showPopup .5s;
+}
+
+@keyframes showPopup {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+:local(.videoContainer) {
+    background-color: rgb(46, 46, 46);
+    border: 2px solid #272727;
+    position: absolute;
+    vertical-align: top;
+    width: 590px;
+    min-height: 290px;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 210px;
+    color: white!important;
+    margin-left: -6px;
+    z-index: 2;
+    -webkit-animation: showPopup .5s;
+    animation: showPopup .5s;
+}
+
+:local(.closeButton) {
+    background-color: transparent!important;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    position: absolute;
+    margin-left: 570px;
+    margin-top: -7px;
+    color: #f97316;
+    z-index: 2;
+    transition: all .2s ease-in-out;
+}
+
+:local(.closeButton:hover) {
+  color: white;
+}
+
+:local(.closevideoButton) {
+    background-color: transparent!important;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    position: absolute;
+    margin-left: 275px;
+    margin-top: -7px;
+    color: #f97316;
+    z-index: 2;
+    transition: all .2s ease-in-out;
+}
+
+:local(.closevideoButton:hover) {
+  color: white;
+}
+
+:local(.videoButton) {
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    position: absolute;
+    margin-left: 160px;
+    margin-top: -54px;
+    border-radius: 6px;
+    height: 40px;
+    background: #f97316!important;
+    color: white;
+    z-index: 2;
+    transition: all .2s ease-in-out;
+}
+
+:local(.videoButton:hover) {
+  background: rgb(146, 61, 0)!important;
+}
+
+:local(.buy1) {
+    position: absolute;
+    border: none;
+    background-color: transparent!important;
+    color: transparent;
+    width: 251px;
+    height: 355px;
+    border-radius: 5px;
+    margin-left: -555px;
+    margin-top: 210px;
+    transition: all .3s ease;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+:local(.buy1:hover) {
+    background-color: black!important;
+    color: white;
+    opacity: 0.8;
+}
+
+:local(.buy2) {
+    position: absolute;
+    background-color: transparent!important;
+    color: transparent;
+    border: none;
+    width: 251px;
+    height: 355px;
+    border-radius: 5px;
+    margin-left: -287px;
+    margin-top: 210px;
+    transition: all .3s ease;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+:local(.buy2:hover) {
+    background-color: black!important;
+    color: white;
+    opacity: 0.8;
+}

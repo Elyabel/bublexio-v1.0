@@ -1,0 +1,106 @@
+:local(#Modal) {
+    background-color: #222;
+    color: white;
+    width: 700px;
+    height: 450px;
+    border-radius: 5px;
+    font-family: Rajdhani;
+    position: absolute;
+    margin-top: -520px;
+    margin-left: -168px;
+    animation: showPopup .5s;
+}
+
+@keyframes showPopup {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+:local(.CloseButton) {
+    background-color: transparent!important;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    /*position: absolute;*/
+    margin-left: 665px;
+    margin-top: 2px;
+    color: #f97316;
+    transition: all .2s ease-in-out;
+}
+
+:local(.closeButton:hover) {
+    color: white;
+}
+
+:local(.VirusCard) {
+    width: 120px;
+    height: 160px;
+    background-color: #383838;
+    display: inline-flex;
+    margin: 5px;
+    border-radius: 5px;
+    transition: all .2s ease;
+    text-align: center;
+    margin-left: 13px;
+}
+
+:local(.VirusCard:hover) {
+    -webkit-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+}
+
+:local(.VirusCardImage) {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+:local(.VirusCardImage img) {
+    width: 90px;
+    border-radius: 50px;
+}
+
+:local(.VirusCardDescription) {
+    width: 120px;
+    height: 60px;
+    background-color: #1b1b1b;
+    margin-top: 100px;
+    margin-left: 0px;
+    border-radius: 0px 0px 5px 5px;
+    position: absolute;
+}
+
+:local(.VirusCardName) {
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+:local(.VirusCardbuttonBuy) {
+    background-color: #383838;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    width: 100px;
+    height: 25px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+  }
+  
+  :local(.VirusCardbuttonBuy i) {
+    color: gold;
+  }
+  
+  :local(.VirusCardbuttonBuy:hover) {
+    background-color: #4b4a4a;
+  }
